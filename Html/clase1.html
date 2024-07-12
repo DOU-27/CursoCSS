@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Clase 1 | CSS</title>
+
+    <style>
+      body {
+        background-color: rgba(1, 180, 200, 0.296);
+      }
+
+      h1 {
+        color: rgb(0, 0, 0);
+      }
+      h1 strong {
+        color: rgb(255, 0, 0);
+        border: 3px;
+        border-color: black;
+      }
+
+      article {
+        font-size: 27px;
+      }
+
+      article > p {
+        color: red;
+      }
+
+      button + button {
+        margin-right: 10%;
+      }
+      
+      .unidades{
+        width: 250px;
+        height: 50px;
+        background: red;
+        border: 20px solid black; 
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Clase 1 de uso de <strong> CSS </strong></h1>
+    </div>
+
+    <div>
+      <h1>Hijo</h1>
+      <div>
+        <article>
+          <p>Este es el padre por asi decirlo, osea primer nivel</p>
+
+          <div>
+            <p>Este es hijo, segundo nivel</p>
+          </div>
+          <p>Este es el padre por asi decirlo, osea primer nivel</p>
+        </article>
+      </div>
+    </div>
+    <div>
+      <h1>Siguiente</h1>
+      <button>1</button>
+      <button>2</button>
+    </div>
+
+    <div class="unidades">
+        <p>Hola</p>
+    </div>
+    <p> No hola</p>
+  </body>
+</html>
